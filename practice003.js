@@ -20,5 +20,5 @@ var cheolSoo = [user3, age3, married];
 var school = {
     score: [100, 97, 24],
     teacher: "phil",
-    friend: ["jo", " foo"]
+    friend: ["jo", " foo"],
 };
