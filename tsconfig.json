@@ -3,7 +3,10 @@
     "target": "es5",
     "module": "commonjs",
     "noImplicitAny": true,
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    // "declaration": true,
+    // "typeRoots": ["./common"]
+
   }
 }
 
@@ -19,7 +22,7 @@ strictNullChecks는 null, undefined 타입에 이상한 조작하면 에러를 �
 /* tsconfig 여러 옵션들
 
 {
- "compilerOptions": {
+"compilerOptions": {
 
   "target": "es5", // 'es3', 'es5', 'es2015', 'es2016', 'es2017','es2018', 'esnext' 가능
   "module": "commonjs", //무슨 import 문법 쓸건지 'commonjs', 'amd', 'es2015', 'esnext'
@@ -44,6 +47,12 @@ strictNullChecks는 null, undefined 타입에 이상한 조작하면 에러를 �
   "noUnusedParameters": true, //쓰지않는 파라미터 있으면 에러내기
   "noImplicitReturns": true, //함수에서 return 빼먹으면 에러내기 
   "noFallthroughCasesInSwitch": true, //switch문 이상하면 에러내기 
- }
 }
+}
+
+// d.ts 에서 사용된 옵션들
+"declaration": true, // d.ts 파일 자동 생성?
+"typeRoots": ["./폴더명"] // d.ts 파일을 자동으로 global module 화 할때 추가하는 옵션
+
+
 */

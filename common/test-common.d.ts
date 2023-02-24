@@ -1,0 +1,1 @@
+type MyGlobalAge = number;
